@@ -1,0 +1,80 @@
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+/* hero */
+.hero {
+    background-color: var(--footer-color);
+}
+.hero-title {
+    color: var(--white-color);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3;
+    letter-spacing: 2.64px;
+}
+.section-title {
+    color: var(--secondary-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 1.1px;
+}
+
+
+/* сиситема кноопок */
+.button {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    padding: 10px 20px;
+}
+
+
+/* feature */
+.feature-list .title {
+    color: var(--secondary-text-color);
+
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.feature-list .text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+}
+/* .feature .text {
+    color: green;
+}
+.feature .warning {
+    color: yellow;
+}
+.text.practice {
+    color: aqua;
+} */
+
+
+/* team */
+.section.team {
+    background-color: var(--portfolio-button-color);
+}
+.teammate-list .title {
+    color: var(--secondary-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.teammate-list .text {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}

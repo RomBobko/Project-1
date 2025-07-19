@@ -1,0 +1,34 @@
+button {
+    color: rgba(33, 33, 33, 1);
+    background-color: #F5F4FA;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    border: 0px;
+}
+
+button:hover,
+button:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+.portfolio-list .title {
+    color: var(--secondary-text-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 1.1px;
+}
+
+.portfolio-list .text {
+    color: var(--primary-text-color);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+}
