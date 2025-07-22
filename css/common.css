@@ -6,6 +6,7 @@
     --primary-text-color: #757575;
     --secondary-text-color: #212121;
     --portfolio-button-color: rgba(245, 244, 250, 1);
+    --button-text-color: #212121;
 }
 
 body {
@@ -31,6 +32,8 @@ h6 {
 
 ul {
     list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 a {
@@ -42,6 +45,23 @@ a {
     list-style: none;
 } */
 
+/* container */
+.container p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container {
+    outline: 2px solid rgb(13, 79, 42);
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 94px;
+}
 
 /* header */
 .header-logo {
@@ -63,6 +83,7 @@ a {
 }
 
 .header {
+    background-color: #ccc;
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.3px;
@@ -99,14 +120,17 @@ a {
 /* footer */
 .footer {
     background-color: var(--footer-color);
+    padding-top: 64px;
 }
 
 .footer-logo {
     color: var(--white-color);
+    margin-bottom: 20px;
 }
 
 .address a {
     color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 9px;
 }
 
 .address .link {

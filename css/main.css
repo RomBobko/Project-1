@@ -1,12 +1,13 @@
-h1,
-h2,
-h3 {
-    text-align: center;
-}
+
 
 /* hero */
 .hero {
     background-color: var(--footer-color);
+
+    height: 600px;
+    padding-top: 200px;
+    margin-bottom: 94px;
+    text-align: center;
 }
 .hero-title {
     color: var(--white-color);
@@ -15,6 +16,9 @@ h3 {
     font-size: 44px;
     line-height: 1.3;
     letter-spacing: 2.64px;
+
+    margin-top: 0px;
+    margin-bottom: 30px;
 }
 .section-title {
     color: var(--secondary-text-color);
@@ -22,6 +26,9 @@ h3 {
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 1.1px;
+
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 
@@ -30,10 +37,15 @@ h3 {
     color: var(--white-color);
     background-color: var(--accent-color);
 
+    display: inline-block;
+    border-radius: 4px;
+    width: 216px;
     font-weight: 700;
+    text-align: center;
     font-size: 16px;
     line-height: 1.8;
-    padding: 10px 20px;
+    padding: 10px 32px;
+
 }
 
 
@@ -43,6 +55,8 @@ h3 {
 
     font-weight: 700;
     font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .feature-list .text {
@@ -64,17 +78,30 @@ h3 {
 /* team */
 .section.team {
     background-color: var(--portfolio-button-color);
+    margin-bottom: 0px;
+    padding-bottom: 94px;
+
+    text-align: center;
 }
-.teammate-list .title {
+
+.team-card {
+    background-color: var(--white-color);
+    width: 270px;
+}
+
+.team-card .title {
     color: var(--secondary-text-color);
 
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.5px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
-.teammate-list .text {
+.team-card .text {
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.5px;
+    padding-bottom: 30px;
 }
