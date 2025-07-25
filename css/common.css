@@ -13,7 +13,7 @@ body {
     background-color: var(--white-color);
     color: var(--primary-text-color);
 
-    width: 1600px;
+    max-width: 1600px;
 
     font-family: Roboto, sans-serif;
     font-weight: 400;
@@ -54,7 +54,7 @@ a {
 
 .container {
     /* outline: 2px solid rgb(13, 79, 42); */
-    width: 1200px;
+    width: 1230px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -132,7 +132,6 @@ a {
     display: flex;
     margin-left: auto;
     margin-right: 200px;
-    padding-right: 15px;
 }
 
 .auth-nav .item + .item {
@@ -142,9 +141,36 @@ a {
 .auth-nav .link {
     color: inherit;
 
-    display: block;
+    display: inline-flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
+}
+
+.auth-nav .link.enveloppe::before {
+    content: "";
+    display: inline-block;
+
+    background-image: url(../images/envelope.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+.auth-nav .link.smartphone::before {
+    content: "";
+    display: inline-block;
+
+    background-image: url(../images/smartphone.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
 }
 
 .auth-nav a:hover,
@@ -164,27 +190,40 @@ a {
 
 /* footer */
 .footer {
-    display: flex;
     background-color: var(--footer-color);
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
+
+.footer.container {
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-box {
+    display: inline-flex;
+    flex-direction: column;
+}
+
 .footer-logo {
+    display: inline-block;
     color: var(--white-color);
     margin-bottom: 20px;
-    display: block;
 }
 
 .address {
-    display: flex;
-    flex-direction: column;    
+    display: inline-flex;
+    flex-direction: column;
+    gap: 9px;
+    /* width: 231px; */
+    /* height: 84px; */
 }
 
 .address a {
-    display: block;
+    display: inline-block;
     color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 9px;
+    font-size: 14px;
 }
 
 /* 
@@ -196,4 +235,59 @@ a {
     color: var(--white-color);
 
     line-height: 1.7;
+}
+
+/* subscribe */
+
+.subscribe-box {
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 70px;
+    /* outline: 1px solid wheat; */
+}
+
+.link-title {
+    display: inline-block;
+
+    margin: 0;
+    margin-bottom: 20px;
+
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.subscribe-list {
+    display: flex;
+    gap: 10px;
+}
+
+.subscribe-link {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    border-radius: 50%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.subscribe-link:nth-child(1) {
+    background-image: url(../images/instagram\ 1.svg);
+}
+.subscribe-link:nth-child(2) {
+    background-image: url(../images/twitter\ 1.svg);
+}
+.subscribe-link:nth-child(3) {
+    background-image: url(../images/facebook\ 1.svg);
+}
+.subscribe-link:nth-child(4) {
+    background-image: url(../images/linkedin\ 1.svg);
+}
+
+
+.subscribe-link:hover {
+    background-color: var(--accent-color);
 }

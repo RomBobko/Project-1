@@ -1,11 +1,20 @@
-
+.header-logo {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 /* hero */
 .hero {
     background-color: var(--footer-color);
+    background-image: 
+    linear-gradient(rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
+    
 
+    max-width: 1600px;
     height: 600px;
     padding-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 94px;
     text-align: center;
 }
@@ -62,6 +71,66 @@
     justify-content: space-between;
 }
 
+.feature-list .item {
+    width: 270px;
+}
+
+
+
+.feature-list .item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+    background-color: var(--portfolio-button-color);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.feature-list .icon-antenna::before {
+    background-image: url(../images/antenna.svg);
+}
+
+.feature-list .icon-clock::before {
+    background-image: url(../images/clock.svg);
+}
+
+.feature-list .icon-diagram::before {
+    background-image: url(../images/diagram.svg);
+}
+
+.feature-list .icon-astronaut::before {
+    background-image: url(../images/astronaut.svg);
+}
+
+/* .feature-list .item:nth-child(1)::before {
+    background-image: url(../images/antenna.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.feature-list .item:nth-child(2)::before {
+    background-image: url(../images/clock.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.feature-list .item:nth-child(3)::before {
+    background-image: url(../images/diagram.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.feature-list .item:nth-child(4)::before {
+    background-image: url(../images/astronaut.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
 .feature-list .item + .item {
     margin-left: 30px;
 }
@@ -93,6 +162,7 @@
 /* work */
 .work-list {
     display: flex;
+    justify-content: space-between;
 }
 
 .work-list .item + .item {
@@ -105,16 +175,19 @@
     margin-bottom: 0px;
     padding-top: 94px;
     padding-bottom: 94px;
+    margin-bottom: 94px;
 
     text-align: center;
 }
 
 .team .item {
     background-color: var(--white-color);
-    width: 270px;
+    max-width: 270px;
 
-    padding-bottom: 30px;
-
+    box-shadow: 
+    0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14);
 }
 
 .team .title {
@@ -131,12 +204,92 @@
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.5px;
+    margin-bottom: 16px;
 }
 
 .teammate-list {
     display: flex;
+    justify-content: space-between;
 }
 
 .teammate-list .item + .item {
     margin-left: 30px;
+}
+
+.icon-list {
+    display: flex;
+    width: 206px;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social-icon.instagram {
+    background-image: url(../images/instagram.svg);
+}
+.social-icon.twitter {
+    background-image: url(../images/twitter.svg);
+}
+.social-icon.facebook {
+    background-image: url(../images/facebook.svg);
+}
+.social-icon.linkedin {
+    background-image: url(../images/linkedin.svg);
+}
+
+
+/* client-section */
+
+.section-title {
+    margin-bottom: 50px;
+}
+
+.client-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    height: 92px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 94px;
+    /* outline: 1px solid black; */
+}
+
+.client-icon {
+    display: inline-block;
+    width: 170px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* outline: 1px solid teal; */
+}
+
+.client-icon:nth-child(1) {
+    background-image: url(../images/Client.svg);
+}
+.client-icon:nth-child(2) {
+    background-image: url(../images/Client\ 2.svg);
+}
+.client-icon:nth-child(3) {
+    background-image: url(../images/Client\ 3.svg);
+}
+.client-icon:nth-child(4) {
+    background-image: url(../images/Client\ 4.svg);
+}
+.client-icon:nth-child(5) {
+    background-image: url(../images/Client\ 5.svg);
+}
+.client-icon:nth-child(6) {
+    background-image: url(../images/Client\ 6.svg);
 }
