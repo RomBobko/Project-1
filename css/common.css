@@ -128,6 +128,26 @@ a {
     margin-left: 50px;
 }
 
+.site-nav .item {
+    position: relative;
+}
+
+.site-nav .current::after {
+    position: absolute;
+
+    content: "";
+    left: 0;
+    bottom: 0;
+    background-color: #2196F3;
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
+}
+
+.link.current {
+    color: var(--accent-color);
+}
+
 .auth-nav {
     display: flex;
     margin-left: auto;
@@ -189,9 +209,6 @@ a {
     color: var(--accent-color);
 }
 
-.link.current {
-    color: var(--accent-color);
-}
 
 /* .header a:hover,
 .header a:focus {
