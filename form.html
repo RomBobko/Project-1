@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+<body>
+    
+    <div class="box">
+        <form class="form js-speaker-form">
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Ivan">
+            </div>
+
+            <div class="form-group">
+                <label for="mail">Mail</label>
+                <input type="email" name="mail" id="mail" placeholder="Ivanovich">
+            </div>
+
+            <div class="form-group">
+                <label for="tel">Number</label>
+                <input type="tel" name="tel" id="tel" placeholder="+380-00-000-00-00">
+            </div>
+
+        <!-- в групи checkbox значення name одинакове
+        важливо для js та запиту на бекенд -->
+        <!-- <fieldset></fieldset> -не працюють flexbox -->
+        
+        <!-- role=group - тільки для підвищення семантики в окремих випадках -->
+        <div role="group">
+            <label for="html">HTML</label>
+            <input type="checkbox" name="topic" value="html" id="html">
+
+            <label for="css">CSS</label>
+            <input type="checkbox" name="topic" value="css" id="css">
+
+            <label for="js">JavaScript</label>
+            <input type="checkbox" name="topic" value="js" id="js">
+        </div>
+
+        </br>
+
+        <!-- ОБОВЯЗКОВО - name одинаковий для радіо -->
+        <div role="group">
+            <input type="radio" name="experience" value="junior" id="junior">
+            <label for="junior">Junior</label>
+
+            <input type="radio" name="experience" value="middle" id="middle">
+            <label for="middle">Middle</label>
+            
+            <input type="radio" name="experience" value="senior" id="senior">
+            <label for="senior">Senior</label>
+        </div>
+
+        </br>
+
+        <label for="pdf">Download document</label>
+        <input type="file" name="pdf" id="pdf">
+
+        </br>
+
+        <label for="comment">Comment</label>
+        <textarea name="comment" id="comment" rows="10"></textarea>
+
+        </br>
+        
+            <button type="submit">Subscribe</button>
+
+        </form>
+    </div>
+
+<script>
+    (() => {
+        document
+            .querySelector('.js-speaker-form')
+            .addEventListener('submit', e => {
+                e.preventDefault();
+
+                new FormData(e.currentTarget).forEach((value, name) =>
+                    console.log(`${name}: ${value}`)
+                );
+            });
+    })();
+</script>
+
+</body>
+</html>
