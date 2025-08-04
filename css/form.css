@@ -33,3 +33,13 @@ textarea {
     padding: 5px 10px;
     margin: 0;
 }
+
+.topic-option {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.topic-option input[type='checkbox'] {
+
+}

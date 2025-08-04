@@ -46,7 +46,31 @@
             <a href="#" class="button"data-open-modal>Замовити послугу</a>
             <div class="backdrop is-hidden"data-backdrop>
                 <div class="modal">
-                    <button data-close-modal="">Close</button>
+                    <button data-close-modal class="modal-close">
+                        <svg width="18" height="18">
+                            <use href="./images/close-black.svg"></use>
+                        </svg>
+                    </button>
+
+                    <form class="modal-form">
+                        <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+                        <div class="form-field">
+                            <label for="name">Ім'я</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="form-field">
+                            <label for="tel">Телефон</label>
+                            <input type="tel" name="tel" id="tel">
+                        </div>
+                        <div class="form-field">
+                            <label for="mail">Пошта</label>
+                            <input type="email" name="mail" id="mail">
+                        </div>
+                        <div class="form-field">
+                            <label for="comment">Коментар</label>
+                            <textarea name="comment" name="comment" id="comment" placeholder="Введіть текст"></textarea>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
